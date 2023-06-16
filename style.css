@@ -150,15 +150,6 @@ input:focus {
    color: white;
 }
 
-.car-image {
-   position: relative;
-}
-
-.car-image img {
-   width: 400px;
-   height: 350px;
-}
-
 .car-info {
    margin-top: 10px;
    text-align: center;
@@ -186,32 +177,34 @@ input:focus {
    width: 150px;
 }
 
-.red {
+.red,
+.black,
+.grey,
+.white,
+.briz {
    width: 20px;
    height: 20px;
    border-radius: 50%;
+}
+
+.red {
    background-color: red;
 }
 
-.blue {
-   width: 20px;
-   height: 20px;
-   border-radius: 50%;
-   background-color: blue;
+.black {
+   background-color: rgb(0, 0, 0);
 }
 
-.green {
-   width: 20px;
-   height: 20px;
-   border-radius: 50%;
-   background-color: green;
+.grey {
+   background-color: rgb(60, 58, 58);
 }
 
 .white {
-   width: 20px;
-   height: 20px;
-   border-radius: 50%;
-   background-color: white;
+   background-color: rgb(255, 255, 255);
+}
+
+.briz {
+   background-color: rgb(32, 176, 184);
 }
 
 

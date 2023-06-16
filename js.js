@@ -68,39 +68,29 @@ function changeCarColor(color) {
    // Меняем фото машины и обновляем заголовок и описание в зависимости от выбранного цвета
    switch (color) {
       case 'red':
-         carPhoto.src = 'car_red.jpg';
+         carPhoto.src = 'car_red.png';
          carTitle.textContent = 'Машина красного цвета';
          carDescription.textContent = 'Это машина красного цвета.';
          break;
-      case 'blue':
-         carPhoto.src = 'car_blue.jpg';
-         carTitle.textContent = 'Машина синего цвета';
-         carDescription.textContent = 'Это машина синего цвета.';
+      case 'black':
+         carPhoto.src = 'car_black.png';
+         carTitle.textContent = 'Машина черного цвета';
+         carDescription.textContent = 'Это машина черного цвета.';
          break;
-      case 'green':
-         carPhoto.src = 'car_green.jpg';
-         carTitle.textContent = 'Машина зеленого цвета';
-         carDescription.textContent = 'Это машина зеленого цвета.';
+      case 'grey':
+         carPhoto.src = 'car_grey.png';
+         carTitle.textContent = 'Машина серого цвета';
+         carDescription.textContent = 'Это машина серого цвета.';
          break;
       case 'white':
-         carPhoto.src = 'car_white.jpg';
+         carPhoto.src = 'car_white.png';
          carTitle.textContent = 'Машина белого цвета';
          carDescription.textContent = 'Это машина белого цвета.';
          break;
+      case 'briz':
+         carPhoto.src = 'car_briz.png';
+         carTitle.textContent = 'Машина берюзового цвета';
+         carDescription.textContent = 'Это машина берюзового цвета.';
+         break;
    }
 }
-
-// Функция для обновления текста при изменении слайда салона
-interiorSlider.on('afterChange', function (event, slick, currentSlide) {
-   switch (currentSlide) {
-      case 0:
-         carDescription.textContent = 'Это машина красного цвета.';
-         break;
-      case 1:
-         carDescription.textContent = 'Это машина синего цвета.';
-         break;
-      case 2:
-         carDescription.textContent = 'Это машина зеленого цвета.';
-         break;
-   }
-});
