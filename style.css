@@ -1,0 +1,224 @@
+body {
+   padding: 0;
+   margin: 0;
+   background: #96828257;
+   box-sizing: border-box;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   margin-left: 50px;
+   margin-right: 50px;
+   margin-top: 50px;
+}
+
+span {
+   color: blue;
+   font-weight: bold;
+   font-size: 1.2em;
+}
+
+li {
+   list-style: none;
+   display: flex;
+   gap: 50px;
+   align-items: center;
+}
+
+.b {
+   width: 180px;
+}
+
+
+.info__li {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding: 0;
+}
+
+
+
+
+.info {
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.blue-button {
+   background-color: blue;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   transform: skew(-20deg);
+   border-top-left-radius: 9px;
+   border-bottom-left-radius: 9px;
+   border-top-right-radius: 9px;
+   border-bottom-right-radius: 9px;
+}
+
+.blue-button:hover {
+   background-color: darkblue;
+   cursor: pointer;
+}
+
+.accordion {
+   background-color: black;
+   color: white;
+   cursor: pointer;
+   padding: 10px;
+   margin: 0;
+   border: none;
+   border-bottom: 1px solid #ddd;
+   transition: background-color 0.3s ease;
+}
+
+.accordion:hover {
+   box-shadow: 0px 0px 8px 4px blue;
+}
+
+.panel {
+   display: none;
+   border-right: 1px solid black;
+   border-bottom: 1px solid black;
+   border-left: 1px solid black;
+   border-image: initial;
+   border-top: none;
+   background: #ed1b1b;
+   padding: 20px;
+}
+
+.panel.active {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.spinner {
+   width: 40px;
+   height: 40px;
+   margin: 0 auto;
+   border: 4px solid #f3f3f3;
+   border-top: 4px solid #3498db;
+   border-radius: 50%;
+   animation: spin 2s linear infinite;
+}
+
+input {
+   border: none;
+   border-radius: 50px;
+   padding: 10px;
+   width: 50%;
+   color: white;
+   font-size: 15px;
+   background: black;
+}
+
+input:focus {
+   border: none;
+   outline: none;
+}
+
+.panel>button {
+   border: none;
+   border-radius: 50px;
+   padding: 10px;
+   width: 25%;
+   color: white;
+   font-size: 15px;
+   background: black;
+}
+
+@keyframes spin {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+.car-slider {
+   display: flex;
+   align-items: center;
+   border: 1px solid grey;
+   border-top-left-radius: 50px;
+   border-bottom-left-radius: 50px;
+   background-color: #252020;
+   color: white;
+}
+
+.car-image {
+   position: relative;
+}
+
+.car-image img {
+   width: 400px;
+   height: 350px;
+}
+
+.car-info {
+   margin-top: 10px;
+   text-align: center;
+}
+
+.color-buttons {
+   margin-top: 10px;
+   text-align: center;
+}
+
+.color-buttons button {
+   margin-right: 5px;
+}
+
+.slides {
+   margin-top: 60px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   padding: 20px;
+   gap: 15px;
+}
+
+.slides img {
+   width: 150px;
+}
+
+.red {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background-color: red;
+}
+
+.blue {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background-color: blue;
+}
+
+.green {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background-color: green;
+}
+
+.white {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background-color: white;
+}
+
+
+@media only screen and (max-width: 767px) {
+   .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+}
