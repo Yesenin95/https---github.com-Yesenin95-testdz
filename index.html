@@ -115,7 +115,7 @@
             <div>
                <h2 class="accordion">Записаться на тест-драйв</h2>
                <div class="panel">
-                  <input type="text" class="phoneNumber" placeholder="Номер телефона">
+                  <input type="text" class="phoneNumber" placeholder="Номер телефона" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                   <button class="submitButton" onclick="submitForm(this)">Отправить</button>
                   <div class="spinner" style="display: none;">
                   </div>
@@ -124,7 +124,7 @@
             <div>
                <h2 class="accordion">Честная рассрочка</h2>
                <div class="panel">
-                  <input type="text" class="phoneNumber" placeholder="Номер телефона">
+                  <input type="text" class="phoneNumber" placeholder="Номер телефона" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                   <button class="submitButton" onclick="submitForm(this)">Отправить</button>
                   <div class="spinner" style="display: none;">
                   </div>
@@ -133,7 +133,7 @@
             <div>
                <h2 class="accordion">Узнать цену</h2>
                <div class="panel">
-                  <input type="text" class="phoneNumber" placeholder="Номер телефона">
+                  <input type="text" class="phoneNumber" placeholder="Номер телефона" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                   <button class="submitButton" onclick="submitForm(this)">Отправить</button>
                   <div class="spinner" style="display: none;">
                   </div>
