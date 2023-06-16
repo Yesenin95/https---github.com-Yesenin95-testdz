@@ -5,15 +5,77 @@ body {
    box-sizing: border-box;
 }
 
+a {
+   text-decoration: none;
+   color: black;
+}
+
+.top {
+   height: 100vh;
+}
+
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding-top: 20px;
+}
+
+.header__text,
+.header__adress,
+.header__number {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.header__adress-text :first-child {
+   margin: 0;
+   padding-bottom: 10px;
+}
+
+.header__adress-text :last-child {
+   margin: 0;
+}
+
+.header__info {
+   background-image: url(./banner1.jpg);
+   height: 85vh;
+   background-repeat: no-repeat;
+   background-position-x: center;
+}
+
+.header__links {
+   padding: 10px 0;
+   display: flex;
+   background-color: rgb(101, 99, 99);
+   align-items: center;
+   justify-content: space-around;
+}
+
+.header__links a {
+   color: white;
+}
+
+
+
+
+
+
+
+
 .container {
    display: grid;
    grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
    margin-left: 50px;
    margin-right: 50px;
    margin-top: 50px;
+   height: 100vh;
+   padding-top: 100px;
 }
 
-span {
+.blue__text {
    color: blue;
    font-weight: bold;
    font-size: 1.2em;
