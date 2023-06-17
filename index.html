@@ -43,17 +43,41 @@
          </div>
       </div>
       <nav class="header__links">
-         <a href="/">COOLRAY</a>
-         <a href="/">AZKARRA</a>
-         <a href="/">TUGELLA</a>
-         <a href="/">MONJARO</a>
-         <a href="/">ПОДБОР КОМПЛЕКТАЦИЙ</a>
-         <a href="/">ТРЕЙД-ИН</a>
-         <a href="/">КРЕДИТ</a>
-         <a href="/">ТЕСТ-ДРАЙВ</a>
-         <a href="/">КОНТАКТЫ</a>
+         <a href="#">COOLRAY</a>
+         <a href="#">AZKARRA</a>
+         <a href="#">TUGELLA</a>
+         <a href="#">MONJARO</a>
+         <a href="#">ПОДБОР КОМПЛЕКТАЦИЙ</a>
+         <a href="#">ТРЕЙД-ИН</a>
+         <a href="#">КРЕДИТ</a>
+         <a href="#">ТЕСТ-ДРАЙВ</a>
+         <a href="#">КОНТАКТЫ</a>
       </nav>
-      <div class="header__info">1</div>
+
+      <div class="header__info">
+         <div>
+            <h1>GEELY с выгодой 3 000 000 Т</h1>
+            <p>рассрочка на 1 год -0% Кредит на 2 года ставка - 10% Кредит на 5 лет ставка - 15.5%</p>
+         </div>
+         <div class="header__bot">
+            <div>
+               <p>Успей забронировать!</p>
+            </div>
+            <div class="header__bot-btn">
+               <div>
+                  <input type="text" placeholder="Номер телефона">
+                  <button>Получить предложение</button>
+               </div>
+               <div>
+                  <button class="header__bot-button">Честная рассрочка 0.01%</button>
+               </div>
+            </div>
+            <div class="header__bot-input">
+               <input type="checkbox" name="check" id="">
+               <span>Согласен на обработку персональных данных</span>
+            </div>
+         </div>
+      </div>
    </section>
    <div class="container">
       <section class="info">
@@ -113,27 +137,30 @@
          </div>
          <div id="accordionContainer">
             <div>
-               <h2 class="accordion">Записаться на тест-драйв</h2>
+               <h2 class="accordion accordion__one">Записаться на тест-драйв</h2>
                <div class="panel">
-                  <input type="text" class="phoneNumber" placeholder="Номер телефона" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                  <input type="text" class="phoneNumber" placeholder="Номер телефона"
+                     oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                   <button class="submitButton" onclick="submitForm(this)">Отправить</button>
                   <div class="spinner" style="display: none;">
                   </div>
                </div>
             </div>
             <div>
-               <h2 class="accordion">Честная рассрочка</h2>
+               <h2 class="accordion accordion__two">Честная рассрочка 0.01%</h2>
                <div class="panel">
-                  <input type="text" class="phoneNumber" placeholder="Номер телефона" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                  <input type="text" class="phoneNumber" placeholder="Номер телефона"
+                     oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                   <button class="submitButton" onclick="submitForm(this)">Отправить</button>
                   <div class="spinner" style="display: none;">
                   </div>
                </div>
             </div>
             <div>
-               <h2 class="accordion">Узнать цену</h2>
+               <h2 class="accordion accordion__free">Узнать цену</h2>
                <div class="panel">
-                  <input type="text" class="phoneNumber" placeholder="Номер телефона" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                  <input type="text" class="phoneNumber" placeholder="Номер телефона"
+                     oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                   <button class="submitButton" onclick="submitForm(this)">Отправить</button>
                   <div class="spinner" style="display: none;">
                   </div>
@@ -175,6 +202,7 @@
          </div>
 
       </section>
+   </div>
    </div>
 
    <script src="js.js"></script>

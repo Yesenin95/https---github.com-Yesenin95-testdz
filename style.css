@@ -1,7 +1,6 @@
 body {
    padding: 0;
    margin: 0;
-   background: #96828257;
    box-sizing: border-box;
 }
 
@@ -9,6 +8,7 @@ a {
    text-decoration: none;
    color: black;
 }
+
 
 .top {
    height: 100vh;
@@ -43,6 +43,11 @@ a {
    height: 85vh;
    background-repeat: no-repeat;
    background-position-x: center;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
 }
 
 .header__links {
@@ -57,8 +62,66 @@ a {
    color: white;
 }
 
+.header__links a:hover {
+   color: #3498db;
+}
 
+.header__bot {
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 20px;
+}
 
+.header__bot-btn {
+   display: flex;
+   align-items: center;
+   gap: 80px;
+}
+
+.header__bot-btn div {
+   display: flex;
+   align-items: center;
+}
+
+.header__bot-btn>div>input {
+   padding: 10px 25px;
+   background-color: #fbfbfd;
+   color: black;
+   border-radius: 0;
+}
+
+.header__bot-btn>div>button {
+   background-color: blue;
+   color: white;
+   padding: 3.5px 60px;
+   cursor: pointer;
+}
+
+.header__bot-input {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.header__btn>button {
+   padding: 10px 25px;
+   background-color: blue;
+   color: white;
+}
+
+.header__bot-button {
+   background-color: blue;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   transform: skew(-20deg);
+   border-top-left-radius: 9px;
+   border-bottom-left-radius: 9px;
+   border-top-right-radius: 9px;
+   border-bottom-right-radius: 9px;
+   height: 40px;
+   cursor: pointer;
+}
 
 
 
@@ -106,6 +169,7 @@ li {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   gap: 50px;
 }
 
 .blue-button {
@@ -126,19 +190,29 @@ li {
 }
 
 .accordion {
-   background-color: black;
-   color: white;
    cursor: pointer;
    padding: 10px;
    margin: 0;
    border: none;
    border-bottom: 1px solid #ddd;
    transition: background-color 0.3s ease;
+}
 
+.accordion__one {
+   background-color: #ddd;
+   color: black;
+}
+.accordion__two {
+   background-color: #9cd8f0;
+   color: black;
+}
+.accordion__free {
+   background-color: blue;
+   color: white;
 }
 
 .accordionContainer {
-   width:100%;
+   width: 100%;
 }
 
 .accordion:hover {
@@ -170,7 +244,7 @@ li {
    animation: spin 2s linear infinite;
 }
 
-input {
+input[type="text"] {
    border: none;
    border-radius: 50px;
    padding: 10px;
